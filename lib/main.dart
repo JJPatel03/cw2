@@ -10,9 +10,12 @@ class RecipeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'World Recipe Book',
+      title: 'Jay\'s Recipe Book',
       theme: ThemeData(
-        primarySwatch: Colors.deepOrange,
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.red[300],
+          foregroundColor: Colors.black,
+        ),
       ),
       home: HomeScreen(),
       routes: {

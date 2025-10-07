@@ -129,12 +129,14 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('World Recipe Book')),
+      backgroundColor: Colors.orange[50],
+      appBar: AppBar(title: Text('Jay\'s Recipe Book')),
       body: ListView.builder(
         itemCount: recipes.length,
         itemBuilder: (context, index) {
           final recipe = recipes[index];
           return Card(
+            color: Colors.orange[100],
             margin: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
             child: ListTile(
               title: Text(recipe['name'],
